@@ -1,5 +1,6 @@
 import type { ToolDefinition } from "@/content/tools";
 import { WordCounterWidget } from "@/components/WordCounterWidget";
+import { FdCalculatorWidget } from "@/components/FdCalculatorWidget";
 
 type ToolShellProps = {
   tool: ToolDefinition;
@@ -12,6 +13,9 @@ type ToolShellProps = {
 export function ToolShell({ tool }: ToolShellProps) {
   if (tool.slug === "word-counter") {
     return <WordCounterWidget />;
+  }
+  if (tool.slug === "fd-calculator") {
+    return <FdCalculatorWidget />;
   }
 
   return (

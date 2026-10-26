@@ -51,7 +51,45 @@ export const tools: ToolDefinition[] = [
           "A word is any sequence of non-whitespace characters. Multiple spaces, tabs, and line breaks are treated as separators and do not inflate the word count.",
       },
     ],
-    relatedSlugs: [],
+    relatedSlugs: ["fd-calculator"],
+  },
+  {
+    slug: "fd-calculator",
+    keyword: "fd calculator",
+    title: "FD Calculator",
+    description:
+      "Calculate the maturity amount and interest earned on a fixed deposit. Enter your deposit, interest rate, term, and compounding frequency to see exactly what your FD will be worth.",
+    metaTitle: "FD Calculator — Fixed Deposit Maturity & Interest Calculator",
+    metaDescription:
+      "Free FD calculator. Find your fixed deposit maturity amount, total interest, and effective yield with monthly, quarterly, half-yearly, or yearly compounding.",
+    faq: [
+      {
+        question: "How is fixed deposit maturity calculated?",
+        answer:
+          "This FD calculator uses the compound interest formula A = P × (1 + r/n)^(n × t), where P is the deposit, r is the annual rate as a decimal, n is the number of compounding periods per year, and t is the term in years.",
+      },
+      {
+        question: "Which compounding frequency should I choose?",
+        answer:
+          "Pick the frequency your bank uses. Many banks compound fixed deposits quarterly, but check your deposit terms. More frequent compounding gives a slightly higher maturity amount at the same rate.",
+      },
+      {
+        question: "What is the effective annual yield?",
+        answer:
+          "The effective annual yield (also called APY) is the real yearly return after compounding. It lets you compare deposits that quote the same rate but compound at different frequencies.",
+      },
+      {
+        question: "Does the FD calculator include tax?",
+        answer:
+          "No. Results are pre-tax. Interest on fixed deposits is usually taxable, so your take-home return may be lower depending on where you live and your tax bracket.",
+      },
+      {
+        question: "Is this FD calculator free and private?",
+        answer:
+          "Yes. It is free with no signup, and all calculations run in your browser. Nothing you enter is sent to or stored on our servers.",
+      },
+    ],
+    relatedSlugs: ["word-counter"],
   },
 ];
 
