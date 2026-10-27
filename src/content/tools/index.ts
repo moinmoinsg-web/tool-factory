@@ -51,7 +51,7 @@ export const tools: ToolDefinition[] = [
           "A word is any sequence of non-whitespace characters. Multiple spaces, tabs, and line breaks are treated as separators and do not inflate the word count.",
       },
     ],
-    relatedSlugs: ["fd-calculator"],
+    relatedSlugs: ["fd-calculator", "json-formatter"],
   },
   {
     slug: "fd-calculator",
@@ -89,7 +89,50 @@ export const tools: ToolDefinition[] = [
           "Yes. It is free with no signup, and all calculations run in your browser. Nothing you enter is sent to or stored on our servers.",
       },
     ],
-    relatedSlugs: ["word-counter"],
+    relatedSlugs: ["word-counter", "json-formatter"],
+  },
+  {
+    slug: "json-formatter",
+    keyword: "json formatter",
+    title: "JSON Formatter",
+    description:
+      "Format, beautify, minify, and validate JSON instantly. Paste your JSON to pretty-print it with clean indentation, sort keys, and spot syntax errors with line and column numbers.",
+    metaTitle: "JSON Formatter — Free Online JSON Beautifier & Validator",
+    metaDescription:
+      "Free JSON formatter and validator. Beautify or minify JSON, choose 2-space, 4-space, or tab indentation, sort keys, and find errors fast. Runs in your browser.",
+    faq: [
+      {
+        question: "What does a JSON formatter do?",
+        answer:
+          "A JSON formatter takes raw or minified JSON and rewrites it with consistent indentation and line breaks so it is easy to read. This tool can also minify JSON back to a single line and validate that it is correct.",
+      },
+      {
+        question: "How do I format JSON online?",
+        answer:
+          "Paste your JSON into the input box. The formatted output appears instantly on the right. Choose Beautify or Minify, pick 2 spaces, 4 spaces, or tabs for indentation, then copy or download the result.",
+      },
+      {
+        question: "Does the JSON formatter validate my JSON?",
+        answer:
+          "Yes. Every input is parsed with the browser's standard JSON parser. If the JSON is invalid, you see the error message along with the line and column where parsing failed, such as a missing comma or an unquoted key.",
+      },
+      {
+        question: "What does the Sort keys option do?",
+        answer:
+          "Sort keys reorders the properties of every object alphabetically, including nested objects. Array order is kept as-is. This makes it easier to compare two JSON documents or keep config files tidy.",
+      },
+      {
+        question: "Is my JSON data safe?",
+        answer:
+          "Yes. Formatting and validation run entirely in your browser. Your JSON is never uploaded to or stored on our servers, so it is safe to use with API responses and config files.",
+      },
+      {
+        question: "Why is my JSON invalid?",
+        answer:
+          "Common causes are trailing commas, single quotes instead of double quotes, unquoted property names, comments, and unescaped characters in strings. Strict JSON does not allow any of these, so fix the spot reported in the error message and try again.",
+      },
+    ],
+    relatedSlugs: ["word-counter", "fd-calculator"],
   },
 ];
 
