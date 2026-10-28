@@ -11,9 +11,15 @@ export function SiteHeader() {
         >
           {SITE_NAME}
         </Link>
-        <nav className="text-sm text-zinc-600 dark:text-zinc-400">
+        <nav className="flex items-center gap-4 text-sm text-zinc-600 dark:text-zinc-400">
           <Link href="/" className="hover:text-zinc-900 dark:hover:text-zinc-50">
             All tools
+          </Link>
+          <Link
+            href="/about"
+            className="hover:text-zinc-900 dark:hover:text-zinc-50"
+          >
+            About
           </Link>
         </nav>
       </div>

@@ -16,13 +16,21 @@ export default function Home() {
           {SITE_NAME}
         </h1>
         <p className="mt-4 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-          Simple, fast online tools you can use without signing up. New tools
-          publish regularly — pick one below to get started.
+          {SITE_NAME} is a collection of free online utility tools for writers,
+          students, developers, and anyone who needs a quick calculation or
+          text transform without installing software.
         </p>
-      </div>
-
-      <div className="mt-8">
-        <AdUnit className="w-full" slot="1111111111" />
+        <p className="mt-4 text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
+          Every tool runs in your browser. We do not ask you to create an
+          account, upload files to our servers, or share personal data to get
+          started. Open a tool, paste or type your input, and get results
+          instantly on the same page.
+        </p>
+        <p className="mt-4 text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
+          New tools publish regularly. Browse the full list below, or jump
+          straight to a specific calculator or formatter when you know what
+          you need.
+        </p>
       </div>
 
       <section className="mt-12" aria-labelledby="tools-heading">
@@ -59,6 +67,10 @@ export default function Home() {
           </ul>
         )}
       </section>
+
+      <div className="mt-12">
+        <AdUnit className="w-full" slot="1111111111" />
+      </div>
     </main>
   );
 }

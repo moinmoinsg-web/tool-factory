@@ -68,17 +68,9 @@ export default async function ToolPage({
         </p>
       </header>
 
-      <div className="mt-8">
-        <AdUnit className="w-full" slot="2222222222" />
-      </div>
-
       <section className="mt-8" aria-label="Tool">
         <ToolShell tool={tool} />
       </section>
-
-      <div className="mt-10">
-        <AdUnit className="w-full" slot="3333333333" />
-      </div>
 
       <FaqSection items={tool.faq} />
 
@@ -104,6 +96,10 @@ export default async function ToolPage({
           </ul>
         </section>
       )}
+
+      <div className="mt-12">
+        <AdUnit className="w-full" slot="3333333333" />
+      </div>
 
       <p className="mt-12 text-sm text-zinc-500 dark:text-zinc-400">
         <Link
