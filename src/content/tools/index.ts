@@ -51,7 +51,7 @@ export const tools: ToolDefinition[] = [
           "A word is any sequence of non-whitespace characters. Multiple spaces, tabs, and line breaks are treated as separators and do not inflate the word count.",
       },
     ],
-    relatedSlugs: ["fd-calculator", "json-formatter"],
+    relatedSlugs: ["fd-calculator", "json-formatter", "xml-to-json-converter"],
   },
   {
     slug: "fd-calculator",
@@ -89,7 +89,7 @@ export const tools: ToolDefinition[] = [
           "Yes. It is free with no signup, and all calculations run in your browser. Nothing you enter is sent to or stored on our servers.",
       },
     ],
-    relatedSlugs: ["word-counter", "json-formatter"],
+    relatedSlugs: ["word-counter", "json-formatter", "xml-to-json-converter"],
   },
   {
     slug: "json-formatter",
@@ -132,7 +132,55 @@ export const tools: ToolDefinition[] = [
           "Common causes are trailing commas, single quotes instead of double quotes, unquoted property names, comments, and unescaped characters in strings. Strict JSON does not allow any of these, so fix the spot reported in the error message and try again.",
       },
     ],
-    relatedSlugs: ["word-counter", "fd-calculator"],
+    relatedSlugs: ["xml-to-json-converter", "word-counter", "fd-calculator"],
+  },
+  {
+    slug: "xml-to-json-converter",
+    keyword: "xml to json converter",
+    title: "XML to JSON Converter",
+    description:
+      "Convert XML to JSON instantly in your browser. Paste or upload an XML file to get clean, formatted JSON with attributes, repeated elements as arrays, CDATA text, and optional number and boolean detection.",
+    metaTitle: "XML to JSON Converter — Free Online XML to JSON Tool",
+    metaDescription:
+      "Free XML to JSON converter. Paste or upload XML and get pretty-printed JSON with attributes, arrays, and type detection. Fast, private, runs in your browser.",
+    faq: [
+      {
+        question: "How do I convert XML to JSON?",
+        answer:
+          "Paste your XML into the input box or upload an .xml file. The XML to JSON converter parses it instantly and shows formatted JSON on the right. Adjust the options if needed, then copy the JSON or download it as a .json file.",
+      },
+      {
+        question: "How are XML attributes converted to JSON?",
+        answer:
+          "Attributes become JSON properties with a prefix so they do not clash with child elements. By default the prefix is @, so <tool id=\"1\"> becomes {\"@id\": 1}. You can change the prefix or turn attributes off entirely.",
+      },
+      {
+        question: "What happens to repeated XML elements?",
+        answer:
+          "When an element name appears more than once under the same parent, the converter groups those elements into a JSON array. Turn on Always use arrays if you want every child element wrapped in an array for a consistent structure.",
+      },
+      {
+        question: "How is element text handled when an element also has attributes or children?",
+        answer:
+          "Elements with only text become simple JSON values. If an element has text plus attributes or child elements, the text is stored under the #text key. CDATA sections are treated as plain text.",
+      },
+      {
+        question: "Does the converter detect numbers and booleans?",
+        answer:
+          "Yes. With Detect numbers & booleans turned on, values like 42, 3.14, true, and false become JSON numbers and booleans. Turn it off to keep every value as a string, which is safer for IDs, zip codes, and phone numbers with leading zeros.",
+      },
+      {
+        question: "Is my XML uploaded to a server?",
+        answer:
+          "No. Conversion uses your browser's built-in XML parser, so your XML never leaves your device. Nothing is uploaded or stored, making it safe for API responses, feeds, and config files.",
+      },
+      {
+        question: "Why does it say my XML is invalid?",
+        answer:
+          "XML must be well-formed: every tag needs a matching closing tag, there must be a single root element, attribute values must be quoted, and special characters like & must be escaped as &amp;. Fix the problem described in the error message and the JSON will appear.",
+      },
+    ],
+    relatedSlugs: ["json-formatter", "word-counter", "fd-calculator"],
   },
 ];
 
