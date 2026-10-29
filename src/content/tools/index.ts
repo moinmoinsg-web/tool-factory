@@ -132,7 +132,7 @@ export const tools: ToolDefinition[] = [
           "Common causes are trailing commas, single quotes instead of double quotes, unquoted property names, comments, and unescaped characters in strings. Strict JSON does not allow any of these, so fix the spot reported in the error message and try again.",
       },
     ],
-    relatedSlugs: ["xml-to-json-converter", "word-counter", "fd-calculator"],
+    relatedSlugs: ["xml-to-json-converter", "json-to-csv-converter", "word-counter", "fd-calculator"],
   },
   {
     slug: "xml-to-json-converter",
@@ -180,7 +180,60 @@ export const tools: ToolDefinition[] = [
           "XML must be well-formed: every tag needs a matching closing tag, there must be a single root element, attribute values must be quoted, and special characters like & must be escaped as &amp;. Fix the problem described in the error message and the JSON will appear.",
       },
     ],
-    relatedSlugs: ["json-formatter", "word-counter", "fd-calculator"],
+    relatedSlugs: ["json-formatter", "json-to-csv-converter", "word-counter", "fd-calculator"],
+  },
+  {
+    slug: "json-to-csv-converter",
+    keyword: "json to csv converter",
+    title: "JSON to CSV Converter",
+    description:
+      "Convert JSON to CSV instantly in your browser. Paste or upload a JSON array of objects to get a clean CSV table with nested objects flattened into columns, your choice of delimiter, and a one-click download that opens in Excel or Google Sheets.",
+    metaTitle: "JSON to CSV Converter — Free Online JSON to CSV Tool",
+    metaDescription:
+      "Free JSON to CSV converter. Paste or upload JSON and get a CSV with flattened nested fields, custom delimiters, and Excel-ready download. Private, runs in your browser.",
+    faq: [
+      {
+        question: "How do I convert JSON to CSV?",
+        answer:
+          "Paste your JSON into the input box or upload a .json file. The JSON to CSV converter turns each object into a row and each property into a column, and the CSV appears instantly on the right. Copy it or download it as a .csv file.",
+      },
+      {
+        question: "What JSON structure works best?",
+        answer:
+          "An array of objects, such as [{\"name\":\"Ada\"},{\"name\":\"Linus\"}], converts most cleanly because every object becomes one row. A single object becomes one row, and an object that wraps a single array of records (for example {\"data\": [...]}) is unwrapped automatically.",
+      },
+      {
+        question: "How are nested objects handled?",
+        answer:
+          "With Flatten nested objects turned on, nested properties become their own columns using dot notation, so {\"stats\":{\"users\":5}} becomes a stats.users column. Turn it off to keep each nested object as a JSON string in a single cell.",
+      },
+      {
+        question: "What happens to arrays inside my JSON?",
+        answer:
+          "Arrays of simple values like strings and numbers are joined into one cell separated by commas, for example json, developer. Arrays that contain objects are kept as a JSON string in the cell so no data is lost.",
+      },
+      {
+        question: "What if my objects have different keys?",
+        answer:
+          "The converter collects every key that appears in any object, in the order it first appears, and uses them as the header row. Rows that are missing a key get an empty cell in that column.",
+      },
+      {
+        question: "Can I use a semicolon or tab instead of a comma?",
+        answer:
+          "Yes. Choose comma, semicolon, tab, or pipe as the delimiter. Semicolons are common in European versions of Excel, and tab-separated output downloads as a .tsv file. Values that contain the delimiter, quotes, or line breaks are quoted automatically.",
+      },
+      {
+        question: "Will the CSV open correctly in Excel?",
+        answer:
+          "Yes. Downloaded files include a UTF-8 byte order mark so Excel displays accented letters and symbols correctly, and fields are escaped following the standard CSV rules (RFC 4180). The file also imports cleanly into Google Sheets and Numbers.",
+      },
+      {
+        question: "Is my JSON uploaded to a server?",
+        answer:
+          "No. Parsing and conversion run entirely in your browser, so your JSON never leaves your device. Nothing is uploaded or stored, which makes it safe for API responses, exports, and other private data.",
+      },
+    ],
+    relatedSlugs: ["json-formatter", "xml-to-json-converter", "word-counter"],
   },
 ];
 

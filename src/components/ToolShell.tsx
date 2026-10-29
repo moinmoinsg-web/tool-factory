@@ -3,6 +3,7 @@ import { WordCounterWidget } from "@/components/WordCounterWidget";
 import { FdCalculatorWidget } from "@/components/FdCalculatorWidget";
 import { JsonFormatterWidget } from "@/components/JsonFormatterWidget";
 import { XmlToJsonWidget } from "@/components/XmlToJsonWidget";
+import { JsonToCsvWidget } from "@/components/JsonToCsvWidget";
 
 type ToolShellProps = {
   tool: ToolDefinition;
@@ -24,6 +25,9 @@ export function ToolShell({ tool }: ToolShellProps) {
   }
   if (tool.slug === "xml-to-json-converter") {
     return <XmlToJsonWidget />;
+  }
+  if (tool.slug === "json-to-csv-converter") {
+    return <JsonToCsvWidget />;
   }
 
   return (
