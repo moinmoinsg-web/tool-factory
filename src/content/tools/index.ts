@@ -132,7 +132,7 @@ export const tools: ToolDefinition[] = [
           "Common causes are trailing commas, single quotes instead of double quotes, unquoted property names, comments, and unescaped characters in strings. Strict JSON does not allow any of these, so fix the spot reported in the error message and try again.",
       },
     ],
-    relatedSlugs: ["xml-to-json-converter", "json-to-csv-converter", "word-counter", "fd-calculator"],
+    relatedSlugs: ["xml-to-json-converter", "xml-formatter", "json-to-csv-converter", "word-counter", "fd-calculator"],
   },
   {
     slug: "xml-to-json-converter",
@@ -180,7 +180,7 @@ export const tools: ToolDefinition[] = [
           "XML must be well-formed: every tag needs a matching closing tag, there must be a single root element, attribute values must be quoted, and special characters like & must be escaped as &amp;. Fix the problem described in the error message and the JSON will appear.",
       },
     ],
-    relatedSlugs: ["json-formatter", "json-to-csv-converter", "word-counter", "fd-calculator"],
+    relatedSlugs: ["xml-formatter", "json-formatter", "json-to-csv-converter", "word-counter", "fd-calculator"],
   },
   {
     slug: "json-to-csv-converter",
@@ -234,6 +234,59 @@ export const tools: ToolDefinition[] = [
       },
     ],
     relatedSlugs: ["json-formatter", "xml-to-json-converter", "word-counter"],
+  },
+  {
+    slug: "xml-formatter",
+    keyword: "xml formatter",
+    title: "XML Formatter",
+    description:
+      "Format, beautify, minify, and validate XML instantly. Paste or upload XML to pretty-print it with clean indentation, keep comments and CDATA intact, and find syntax errors before they break your app.",
+    metaTitle: "XML Formatter — Free Online XML Beautifier & Validator",
+    metaDescription:
+      "Free XML formatter and validator. Beautify or minify XML with 2-space, 4-space, or tab indentation, keep comments and CDATA, and spot errors fast. Runs in your browser.",
+    faq: [
+      {
+        question: "What does an XML formatter do?",
+        answer:
+          "An XML formatter takes compact or messy XML and rewrites it with one element per line and consistent indentation so the structure is easy to read. This tool can also minify XML back to a single line and checks that the XML is well-formed.",
+      },
+      {
+        question: "How do I format XML online?",
+        answer:
+          "Paste your XML into the input box or upload an .xml file. The formatted XML appears instantly on the right. Choose Beautify or Minify, pick 2 spaces, 4 spaces, or tabs for indentation, then copy the result or download it as an .xml file.",
+      },
+      {
+        question: "Is an XML formatter the same as an XML beautifier or pretty printer?",
+        answer:
+          "Yes. XML formatter, XML beautifier, and XML pretty printer all describe the same thing: adding line breaks and indentation to make XML readable without changing its data. Minifying is the reverse and removes the whitespace between tags.",
+      },
+      {
+        question: "Does the XML formatter validate my XML?",
+        answer:
+          "Yes. Every input is parsed with your browser's built-in XML parser. If the XML is not well-formed, for example a tag is not closed, an attribute is unquoted, or an ampersand is not escaped, you see the parser's error message instead of output.",
+      },
+      {
+        question: "Are comments, CDATA, and the XML declaration kept?",
+        answer:
+          "Yes. The XML declaration, DOCTYPE, processing instructions, and CDATA sections are preserved exactly. Comments are kept by default, and you can turn off Keep comments to strip them, which is handy when minifying.",
+      },
+      {
+        question: "What does Self-close empty tags do?",
+        answer:
+          "With Self-close empty tags on, elements with no content are written as <item/>. Turn it off to write them as <item></item>. Both forms mean the same thing to XML parsers, so choose whichever your project or team style prefers.",
+      },
+      {
+        question: "Will formatting change my XML data?",
+        answer:
+          "Formatting only changes the whitespace between tags. Element names, attributes, text values, and CDATA content stay the same. Leading and trailing spaces around text inside an element are trimmed, so if exact whitespace matters inside a value, wrap it in CDATA.",
+      },
+      {
+        question: "Is my XML uploaded to a server?",
+        answer:
+          "No. Formatting and validation run entirely in your browser, so your XML never leaves your device. Nothing is uploaded or stored, which makes it safe for API responses, SOAP messages, sitemaps, and config files.",
+      },
+    ],
+    relatedSlugs: ["xml-to-json-converter", "json-formatter", "json-to-csv-converter", "word-counter"],
   },
 ];
 

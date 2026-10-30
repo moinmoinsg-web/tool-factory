@@ -4,6 +4,7 @@ import { FdCalculatorWidget } from "@/components/FdCalculatorWidget";
 import { JsonFormatterWidget } from "@/components/JsonFormatterWidget";
 import { XmlToJsonWidget } from "@/components/XmlToJsonWidget";
 import { JsonToCsvWidget } from "@/components/JsonToCsvWidget";
+import { XmlFormatterWidget } from "@/components/XmlFormatterWidget";
 
 type ToolShellProps = {
   tool: ToolDefinition;
@@ -28,6 +29,9 @@ export function ToolShell({ tool }: ToolShellProps) {
   }
   if (tool.slug === "json-to-csv-converter") {
     return <JsonToCsvWidget />;
+  }
+  if (tool.slug === "xml-formatter") {
+    return <XmlFormatterWidget />;
   }
 
   return (
