@@ -51,7 +51,7 @@ export const tools: ToolDefinition[] = [
           "A word is any sequence of non-whitespace characters. Multiple spaces, tabs, and line breaks are treated as separators and do not inflate the word count.",
       },
     ],
-    relatedSlugs: ["fd-calculator", "json-formatter", "xml-to-json-converter"],
+    relatedSlugs: ["fd-calculator", "json-formatter", "xml-to-json-converter", "percentage-calculator"],
   },
   {
     slug: "fd-calculator",
@@ -89,7 +89,7 @@ export const tools: ToolDefinition[] = [
           "Yes. It is free with no signup, and all calculations run in your browser. Nothing you enter is sent to or stored on our servers.",
       },
     ],
-    relatedSlugs: ["word-counter", "json-formatter", "xml-to-json-converter"],
+    relatedSlugs: ["percentage-calculator", "word-counter", "json-formatter", "xml-to-json-converter"],
   },
   {
     slug: "json-formatter",
@@ -287,6 +287,59 @@ export const tools: ToolDefinition[] = [
       },
     ],
     relatedSlugs: ["xml-to-json-converter", "json-formatter", "json-to-csv-converter", "word-counter"],
+  },
+  {
+    slug: "percentage-calculator",
+    keyword: "percentage calculator",
+    title: "Percentage Calculator",
+    description:
+      "Work out any percentage in seconds: find X% of a number, what percent one number is of another, percentage increase or decrease, add or subtract a percentage, reverse percentages, and percentage difference. Every answer shows the formula used.",
+    metaTitle: "Percentage Calculator — Free Online % Calculator with Formulas",
+    metaDescription:
+      "Free percentage calculator. Find X% of Y, what percent X is of Y, percentage increase or decrease, reverse percentages, and percentage difference, with formulas shown.",
+    faq: [
+      {
+        question: "How do I calculate a percentage of a number?",
+        answer:
+          "Divide the percentage by 100 and multiply by the number. For example, 20% of 150 is 20 ÷ 100 × 150 = 30. Enter the percentage and the number in the first box of the calculator to get the answer instantly.",
+      },
+      {
+        question: "How do I find what percent one number is of another?",
+        answer:
+          "Divide the part by the whole and multiply by 100. For example, 30 out of 120 is 30 ÷ 120 × 100 = 25%. This is the formula for test scores, completion rates, and shares of a total.",
+      },
+      {
+        question: "How do I calculate percentage increase or decrease?",
+        answer:
+          "Subtract the original value from the new value, divide by the original value, and multiply by 100. Going from 80 to 100 is (100 − 80) ÷ 80 × 100 = 25% increase. A negative result means a percentage decrease.",
+      },
+      {
+        question: "What is the difference between percentage change and percentage difference?",
+        answer:
+          "Percentage change compares a new value to an original value, so direction matters. Percentage difference compares two values with no starting point: the absolute difference is divided by their average. For 10 and 15 the percentage difference is 5 ÷ 12.5 × 100 = 40%.",
+      },
+      {
+        question: "How do I add or subtract a percentage from a number?",
+        answer:
+          "To add a percentage, multiply by 1 plus the percentage as a decimal: 50 + 15% is 50 × 1.15 = 57.5. To subtract, multiply by 1 minus the decimal: 50 − 15% is 50 × 0.85 = 42.5. This is handy for tax, tips, markups, and discounts.",
+      },
+      {
+        question: "How do I find the original number from a percentage?",
+        answer:
+          "Divide the known part by the percentage as a decimal. If 45 is 60% of a number, the number is 45 ÷ 0.60 = 75. Use this reverse percentage calculation to find a pre-discount price or a total from a partial amount.",
+      },
+      {
+        question: "Why is a 50% increase followed by a 50% decrease not the same value?",
+        answer:
+          "Each percentage is applied to a different base. 100 increased by 50% is 150, but 50% of 150 is 75, so decreasing gives 75, not 100. Percentage changes compound, so always check which value the percentage is based on.",
+      },
+      {
+        question: "Is this percentage calculator free and private?",
+        answer:
+          "Yes. The calculator is free with no signup, and all calculations run in your browser. The numbers you enter are never sent to or stored on a server.",
+      },
+    ],
+    relatedSlugs: ["fd-calculator", "word-counter", "json-to-csv-converter"],
   },
 ];
 
