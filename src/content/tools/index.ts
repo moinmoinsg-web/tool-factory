@@ -89,7 +89,7 @@ export const tools: ToolDefinition[] = [
           "Yes. It is free with no signup, and all calculations run in your browser. Nothing you enter is sent to or stored on our servers.",
       },
     ],
-    relatedSlugs: ["percentage-calculator", "word-counter", "json-formatter", "xml-to-json-converter"],
+    relatedSlugs: ["percentage-calculator", "margin-calculator", "word-counter", "json-formatter", "xml-to-json-converter"],
   },
   {
     slug: "json-formatter",
@@ -339,7 +339,60 @@ export const tools: ToolDefinition[] = [
           "Yes. The calculator is free with no signup, and all calculations run in your browser. The numbers you enter are never sent to or stored on a server.",
       },
     ],
-    relatedSlugs: ["fd-calculator", "word-counter", "json-to-csv-converter"],
+    relatedSlugs: ["margin-calculator", "fd-calculator", "word-counter", "json-to-csv-converter"],
+  },
+  {
+    slug: "margin-calculator",
+    keyword: "margin calculator",
+    title: "Margin Calculator",
+    description:
+      "Calculate gross margin, markup, and profit from cost and selling price, find the selling price you need for a target margin, work out the maximum cost you can afford, and convert between margin and markup. Every result shows the formula used.",
+    metaTitle: "Margin Calculator — Free Profit Margin & Markup Calculator",
+    metaDescription:
+      "Free margin calculator. Enter cost and price to get gross margin, markup, and profit, find the price for a target margin, and convert margin to markup instantly.",
+    faq: [
+      {
+        question: "How do I calculate profit margin?",
+        answer:
+          "Subtract the cost from the selling price to get gross profit, divide the profit by the selling price, and multiply by 100. For an item that costs $60 and sells for $100, the margin is (100 − 60) ÷ 100 × 100 = 40%.",
+      },
+      {
+        question: "What is the difference between margin and markup?",
+        answer:
+          "Both use the same profit, but margin divides it by the selling price while markup divides it by the cost. A $60 item sold for $100 has a 40% margin but a 66.67% markup. Margin can never reach 100%, while markup has no upper limit.",
+      },
+      {
+        question: "How do I find the selling price for a target margin?",
+        answer:
+          "Divide the cost by 1 minus the target margin as a decimal. To earn a 40% margin on a $60 cost, the price is 60 ÷ (1 − 0.40) = $100. Adding 40% to the cost ($84) would only give a 28.6% margin, which is a common pricing mistake.",
+      },
+      {
+        question: "How do I convert markup to margin?",
+        answer:
+          "Margin = markup ÷ (100 + markup) × 100. A 50% markup equals a 33.33% margin, and a 100% markup equals a 50% margin. To go the other way, markup = margin ÷ (100 − margin) × 100.",
+      },
+      {
+        question: "Is this a gross margin or net margin calculator?",
+        answer:
+          "It calculates gross margin: selling price minus the direct cost of the product or service. Net margin also subtracts overheads such as rent, salaries, marketing, and taxes. To estimate net margin, enter your fully loaded cost per unit as the cost.",
+      },
+      {
+        question: "What is a good profit margin?",
+        answer:
+          "It depends on the industry. Grocery and retail often run gross margins of 20–40%, restaurants around 60–70% on food cost, and software or digital products 70–90%. Compare your margin with businesses that have a similar cost structure rather than using a single target.",
+      },
+      {
+        question: "Why does my margin show as negative?",
+        answer:
+          "A negative margin means the selling price is lower than the cost, so each sale loses money. Raise the price, reduce the cost, or use the target margin box to see the minimum price needed to break even or reach your goal.",
+      },
+      {
+        question: "Is this margin calculator free and private?",
+        answer:
+          "Yes. The calculator is free with no signup, and every calculation runs in your browser. The prices and costs you enter are never sent to or stored on a server.",
+      },
+    ],
+    relatedSlugs: ["percentage-calculator", "fd-calculator", "json-to-csv-converter"],
   },
 ];
 

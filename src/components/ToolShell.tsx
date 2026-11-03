@@ -6,6 +6,7 @@ import { XmlToJsonWidget } from "@/components/XmlToJsonWidget";
 import { JsonToCsvWidget } from "@/components/JsonToCsvWidget";
 import { XmlFormatterWidget } from "@/components/XmlFormatterWidget";
 import { PercentageCalculatorWidget } from "@/components/PercentageCalculatorWidget";
+import { MarginCalculatorWidget } from "@/components/MarginCalculatorWidget";
 
 type ToolShellProps = {
   tool: ToolDefinition;
@@ -36,6 +37,9 @@ export function ToolShell({ tool }: ToolShellProps) {
   }
   if (tool.slug === "percentage-calculator") {
     return <PercentageCalculatorWidget />;
+  }
+  if (tool.slug === "margin-calculator") {
+    return <MarginCalculatorWidget />;
   }
 
   return (
