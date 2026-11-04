@@ -51,7 +51,7 @@ export const tools: ToolDefinition[] = [
           "A word is any sequence of non-whitespace characters. Multiple spaces, tabs, and line breaks are treated as separators and do not inflate the word count.",
       },
     ],
-    relatedSlugs: ["fd-calculator", "json-formatter", "xml-to-json-converter", "percentage-calculator"],
+    relatedSlugs: ["fd-calculator", "json-formatter", "xml-to-json-converter", "percentage-calculator", "gpa-calculator"],
   },
   {
     slug: "fd-calculator",
@@ -339,7 +339,7 @@ export const tools: ToolDefinition[] = [
           "Yes. The calculator is free with no signup, and all calculations run in your browser. The numbers you enter are never sent to or stored on a server.",
       },
     ],
-    relatedSlugs: ["margin-calculator", "fd-calculator", "word-counter", "json-to-csv-converter"],
+    relatedSlugs: ["margin-calculator", "gpa-calculator", "fd-calculator", "word-counter", "json-to-csv-converter"],
   },
   {
     slug: "margin-calculator",
@@ -393,6 +393,59 @@ export const tools: ToolDefinition[] = [
       },
     ],
     relatedSlugs: ["percentage-calculator", "fd-calculator", "json-to-csv-converter"],
+  },
+  {
+    slug: "gpa-calculator",
+    keyword: "gpa calculator",
+    title: "GPA Calculator",
+    description:
+      "Calculate your semester GPA from letter grades and credit hours on the standard 4.0 scale, see weighted GPA for Honors and AP/IB classes, combine it with previous terms for a cumulative GPA, and find the GPA you need to reach a target. Every result shows the formula used.",
+    metaTitle: "GPA Calculator — Free Weighted & Cumulative GPA Calculator",
+    metaDescription:
+      "Free GPA calculator. Enter letter grades and credits to get your unweighted and weighted GPA on a 4.0 scale, cumulative GPA, and the GPA needed to hit your target.",
+    faq: [
+      {
+        question: "How do I calculate my GPA?",
+        answer:
+          "Convert each letter grade to grade points (A = 4.0, B = 3.0, C = 2.0, D = 1.0, F = 0), multiply by the course credits, add the results, and divide by the total credits. For an A in a 3-credit class and a B in a 4-credit class, GPA = (4.0 × 3 + 3.0 × 4) ÷ 7 = 3.43.",
+      },
+      {
+        question: "What GPA scale does this calculator use?",
+        answer:
+          "It uses the common US 4.0 scale with plus and minus grades: A+ and A = 4.0, A− = 3.7, B+ = 3.3, B = 3.0, B− = 2.7, C+ = 2.3, C = 2.0, C− = 1.7, D+ = 1.3, D = 1.0, D− = 0.7, and F = 0. Some schools give A+ a 4.3, so check your school's handbook if your result needs to match an official transcript.",
+      },
+      {
+        question: "What is the difference between weighted and unweighted GPA?",
+        answer:
+          "Unweighted GPA treats every class the same on a 4.0 scale. Weighted GPA adds bonus points for harder classes, commonly +0.5 for Honors and +1.0 for AP or IB, so an A in an AP class counts as 5.0. Colleges often recalculate GPA themselves, so it is useful to know both numbers.",
+      },
+      {
+        question: "Why do credit hours matter in GPA?",
+        answer:
+          "GPA is a credit-weighted average, so a 4-credit course affects it more than a 1-credit course. A C in a 4-credit lab lowers your GPA four times as much as a C in a 1-credit elective. Enter the credit hours shown on your schedule or transcript for each course.",
+      },
+      {
+        question: "How do I calculate cumulative GPA?",
+        answer:
+          "Multiply your previous cumulative GPA by your previous credits to get total quality points, add this term's quality points, and divide by all credits combined. With a 3.2 GPA over 60 credits and a 3.6 term over 15 credits, cumulative GPA = (3.2 × 60 + 3.6 × 15) ÷ 75 = 3.28.",
+      },
+      {
+        question: "How can I find the GPA I need to reach a target?",
+        answer:
+          "Use the target box: required GPA = (target × total credits after the remaining courses − current GPA × completed credits) ÷ remaining credits. If the answer is above 4.0, the target cannot be reached on an unweighted scale in that many credits.",
+      },
+      {
+        question: "Do pass/fail or withdrawn classes count toward GPA?",
+        answer:
+          "Usually not. Pass/fail, audit, and withdrawn (W) courses generally carry no grade points, so leave them out of the calculator. A failing grade (F) does count as 0 points at most schools, and repeated courses may replace the earlier grade depending on your school's policy.",
+      },
+      {
+        question: "Is this GPA calculator free and private?",
+        answer:
+          "Yes. The calculator is free with no signup, and every calculation runs in your browser. Your courses and grades are never sent to or stored on a server.",
+      },
+    ],
+    relatedSlugs: ["percentage-calculator", "word-counter", "margin-calculator"],
   },
 ];
 

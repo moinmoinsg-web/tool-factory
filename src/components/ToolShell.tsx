@@ -7,6 +7,7 @@ import { JsonToCsvWidget } from "@/components/JsonToCsvWidget";
 import { XmlFormatterWidget } from "@/components/XmlFormatterWidget";
 import { PercentageCalculatorWidget } from "@/components/PercentageCalculatorWidget";
 import { MarginCalculatorWidget } from "@/components/MarginCalculatorWidget";
+import { GpaCalculatorWidget } from "@/components/GpaCalculatorWidget";
 
 type ToolShellProps = {
   tool: ToolDefinition;
@@ -40,6 +41,9 @@ export function ToolShell({ tool }: ToolShellProps) {
   }
   if (tool.slug === "margin-calculator") {
     return <MarginCalculatorWidget />;
+  }
+  if (tool.slug === "gpa-calculator") {
+    return <GpaCalculatorWidget />;
   }
 
   return (
