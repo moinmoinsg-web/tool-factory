@@ -339,7 +339,7 @@ export const tools: ToolDefinition[] = [
           "Yes. The calculator is free with no signup, and all calculations run in your browser. The numbers you enter are never sent to or stored on a server.",
       },
     ],
-    relatedSlugs: ["margin-calculator", "gpa-calculator", "fd-calculator", "word-counter", "json-to-csv-converter"],
+    relatedSlugs: ["margin-calculator", "gpa-calculator", "date-calculator", "fd-calculator", "word-counter"],
   },
   {
     slug: "margin-calculator",
@@ -445,7 +445,60 @@ export const tools: ToolDefinition[] = [
           "Yes. The calculator is free with no signup, and every calculation runs in your browser. Your courses and grades are never sent to or stored on a server.",
       },
     ],
-    relatedSlugs: ["percentage-calculator", "word-counter", "margin-calculator"],
+    relatedSlugs: ["percentage-calculator", "word-counter", "margin-calculator", "date-calculator"],
+  },
+  {
+    slug: "date-calculator",
+    keyword: "date calculator",
+    title: "Date Calculator",
+    description:
+      "Calculate the number of days between two dates, add or subtract days, weeks, months, or years, find the day of the week for any date, and work out exact age in years, months, and days. Every result shows the formula used.",
+    metaTitle: "Date Calculator — Days Between Dates, Add/Subtract & Age",
+    metaDescription:
+      "Free date calculator. Find days between two dates, add or subtract days/weeks/months/years, see the weekday, and calculate exact age. Runs in your browser.",
+    faq: [
+      {
+        question: "How do I calculate the number of days between two dates?",
+        answer:
+          "Enter a start date and an end date. The calculator subtracts the start from the end using calendar days, so the same date returns 0. Going from January 1 to January 31 is 30 days. A negative result means the end date is earlier than the start.",
+      },
+      {
+        question: "What is the difference between calendar days and business days?",
+        answer:
+          "Calendar days count every day, including weekends. Business days skip Saturdays and Sundays. Holidays are not excluded because they vary by country and company, so adjust manually if your schedule has public holidays off.",
+      },
+      {
+        question: "How do I add or subtract days, weeks, months, or years from a date?",
+        answer:
+          "Choose a starting date, pick Add or Subtract, enter an amount, and select the unit. Adding 30 days to March 1 gives March 31. Adding months and years clamps to the last valid day of the month, so January 31 plus one month becomes February 28 (or 29 in a leap year).",
+      },
+      {
+        question: "How does the age calculator work?",
+        answer:
+          "Enter a birth date and an as-of date. Age is broken into full years, then remaining months, then remaining days. You also get the total number of calendar days lived. This matches how most people talk about age rather than using a raw day count alone.",
+      },
+      {
+        question: "Does the date calculator include the end date?",
+        answer:
+          "The day count is the difference between the two calendar dates, so the start and end on the same day is 0. If you need an inclusive count of both endpoints (common for hotel nights vs. stay length), add 1 to the calendar-day result.",
+      },
+      {
+        question: "Which calendar and timezone does it use?",
+        answer:
+          "It uses the Gregorian calendar and your device local timezone for interpreting the date picker values. Calculations are done on calendar dates (year-month-day), not on clock times, so daylight saving changes do not shift the day count.",
+      },
+      {
+        question: "Can I find what day of the week a date falls on?",
+        answer:
+          "Yes. Enter any date in the weekday box to see the full weekday name and long-form date. This is useful for planning events, checking historical dates, and verifying deadlines.",
+      },
+      {
+        question: "Is this date calculator free and private?",
+        answer:
+          "Yes. The calculator is free with no signup, and every calculation runs in your browser. The dates you enter are never sent to or stored on a server.",
+      },
+    ],
+    relatedSlugs: ["percentage-calculator", "gpa-calculator", "fd-calculator", "word-counter", "margin-calculator"],
   },
 ];
 

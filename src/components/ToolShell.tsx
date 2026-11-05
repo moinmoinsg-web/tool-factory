@@ -8,6 +8,7 @@ import { XmlFormatterWidget } from "@/components/XmlFormatterWidget";
 import { PercentageCalculatorWidget } from "@/components/PercentageCalculatorWidget";
 import { MarginCalculatorWidget } from "@/components/MarginCalculatorWidget";
 import { GpaCalculatorWidget } from "@/components/GpaCalculatorWidget";
+import { DateCalculatorWidget } from "@/components/DateCalculatorWidget";
 
 type ToolShellProps = {
   tool: ToolDefinition;
@@ -44,6 +45,9 @@ export function ToolShell({ tool }: ToolShellProps) {
   }
   if (tool.slug === "gpa-calculator") {
     return <GpaCalculatorWidget />;
+  }
+  if (tool.slug === "date-calculator") {
+    return <DateCalculatorWidget />;
   }
 
   return (
