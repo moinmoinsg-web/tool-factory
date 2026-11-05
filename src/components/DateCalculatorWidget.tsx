@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 
@@ -134,18 +134,27 @@ function DateField({
 }
 
 export function DateCalculatorWidget() {
+  // Fixed defaults for SSR/prerender; hydrate "today" after mount (Next.js forbids new Date() during prerender).
   const [start, setStart] = useState("2026-01-01");
-  const [end, setEnd] = useState(todayIso());
+  const [end, setEnd] = useState("2026-11-05");
 
-  const [base, setBase] = useState(todayIso());
+  const [base, setBase] = useState("2026-11-05");
   const [amount, setAmount] = useState("30");
   const [unit, setUnit] = useState<"days" | "weeks" | "months" | "years">("days");
   const [direction, setDirection] = useState<"add" | "sub">("add");
 
-  const [lookup, setLookup] = useState(todayIso());
+  const [lookup, setLookup] = useState("2026-11-05");
 
   const [birth, setBirth] = useState("2000-01-15");
-  const [asOf, setAsOf] = useState(todayIso());
+  const [asOf, setAsOf] = useState("2026-11-05");
+
+  useEffect(() => {
+    const today = todayIso();
+    setEnd(today);
+    setBase(today);
+    setLookup(today);
+    setAsOf(today);
+  }, []);
 
   const startDt = useMemo(() => parseDate(start), [start]);
   const endDt = useMemo(() => parseDate(end), [end]);
