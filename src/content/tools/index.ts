@@ -339,7 +339,7 @@ export const tools: ToolDefinition[] = [
           "Yes. The calculator is free with no signup, and all calculations run in your browser. The numbers you enter are never sent to or stored on a server.",
       },
     ],
-    relatedSlugs: ["margin-calculator", "gpa-calculator", "date-calculator", "fd-calculator", "word-counter"],
+    relatedSlugs: ["cm-to-inches", "margin-calculator", "gpa-calculator", "date-calculator", "fd-calculator", "word-counter"],
   },
   {
     slug: "margin-calculator",
@@ -498,7 +498,60 @@ export const tools: ToolDefinition[] = [
           "Yes. The calculator is free with no signup, and every calculation runs in your browser. The dates you enter are never sent to or stored on a server.",
       },
     ],
-    relatedSlugs: ["percentage-calculator", "gpa-calculator", "fd-calculator", "word-counter", "margin-calculator"],
+    relatedSlugs: ["percentage-calculator", "gpa-calculator", "fd-calculator", "word-counter", "cm-to-inches"],
+  },
+  {
+    slug: "cm-to-inches",
+    keyword: "cm to inches",
+    title: "CM to Inches Converter",
+    description:
+      "Convert centimeters to inches and inches to centimeters instantly. Enter cm to get exact inches (and feet + inches), convert inches back to cm/mm/m, or turn feet and inches into centimeters. Every result shows the formula used.",
+    metaTitle: "CM to Inches Converter — Free Centimeters to Inches Calculator",
+    metaDescription:
+      "Free cm to inches converter. Convert centimeters to inches, inches to cm, and feet+inches to centimeters with exact 2.54 factor. Runs in your browser.",
+    faq: [
+      {
+        question: "How do I convert cm to inches?",
+        answer:
+          "Divide the length in centimeters by 2.54. For example, 30 cm ÷ 2.54 = 11.811 inches. This tool uses the international inch definition where 1 inch equals exactly 2.54 centimeters.",
+      },
+      {
+        question: "How do I convert inches to cm?",
+        answer:
+          "Multiply the length in inches by 2.54. For example, 12 inches × 2.54 = 30.48 cm. The same factor works for fractional inches such as 5.5 in → 13.97 cm.",
+      },
+      {
+        question: "Why is the conversion factor 2.54?",
+        answer:
+          "Since 1959, the international yard and pound agreement defined 1 inch as exactly 25.4 millimeters, which is 2.54 centimeters. Using this exact constant keeps results consistent with scientific and engineering practice.",
+      },
+      {
+        question: "How do I convert cm to feet and inches?",
+        answer:
+          "First convert cm to total inches (cm ÷ 2.54). Then divide by 12 for whole feet and take the remainder as leftover inches. Example: 180 cm → 70.866 in → 5 ft 10.866 in.",
+      },
+      {
+        question: "How do I convert height from feet and inches to cm?",
+        answer:
+          "Convert feet to inches (feet × 12), add the leftover inches, then multiply by 2.54. A height of 5 ft 10 in is (5 × 12 + 10) × 2.54 = 177.8 cm.",
+      },
+      {
+        question: "Is 1 inch exactly 2.54 cm?",
+        answer:
+          "Yes. The modern international inch is defined as exactly 2.54 cm. Older local inch definitions varied slightly, but for everyday measurement, science, and manufacturing you should use 2.54.",
+      },
+      {
+        question: "How many inches are in 100 cm?",
+        answer:
+          "100 cm ÷ 2.54 ≈ 39.3701 inches, which is about 3 ft 3.37 in. One meter (100 cm) is often remembered as roughly 39.37 inches.",
+      },
+      {
+        question: "Is this cm to inches converter free and private?",
+        answer:
+          "Yes. The converter is free with no signup, and every calculation runs in your browser. The numbers you enter are never sent to or stored on a server.",
+      },
+    ],
+    relatedSlugs: ["percentage-calculator", "date-calculator", "fd-calculator", "margin-calculator", "gpa-calculator"],
   },
 ];
 
