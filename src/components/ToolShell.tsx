@@ -10,6 +10,7 @@ import { MarginCalculatorWidget } from "@/components/MarginCalculatorWidget";
 import { GpaCalculatorWidget } from "@/components/GpaCalculatorWidget";
 import { DateCalculatorWidget } from "@/components/DateCalculatorWidget";
 import { CmToInchesWidget } from "@/components/CmToInchesWidget";
+import { KgToLbsWidget } from "@/components/KgToLbsWidget";
 
 type ToolShellProps = {
   tool: ToolDefinition;
@@ -49,6 +50,9 @@ export function ToolShell({ tool }: ToolShellProps) {
   }
   if (tool.slug === "date-calculator") {
     return <DateCalculatorWidget />;
+  }
+  if (tool.slug === "kg-to-lbs") {
+    return <KgToLbsWidget />;
   }
   if (tool.slug === "cm-to-inches") {
     return <CmToInchesWidget />;

@@ -553,6 +553,59 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["percentage-calculator", "date-calculator", "fd-calculator", "margin-calculator", "gpa-calculator"],
   },
+  {
+    slug: "kg-to-lbs",
+    keyword: "kg to lbs",
+    title: "KG to LBS Converter",
+    description:
+      "Convert kilograms to pounds and pounds to kilograms instantly. Enter kg to get exact lbs (and pounds + ounces), or turn lbs into kg, grams, and stone. Every result shows the formula used.",
+    metaTitle: "KG to LBS Converter — Free Kilograms to Pounds Calculator",
+    metaDescription:
+      "Free kg to lbs converter. Convert kilograms to pounds, lbs to kg, grams and stone using the exact 0.45359237 factor. Runs in your browser.",
+    faq: [
+      {
+        question: "How do I convert kg to lbs?",
+        answer:
+          "Divide the mass in kilograms by 0.45359237, or multiply by about 2.20462. For example, 70 kg ÷ 0.45359237 = 154.324 lbs.",
+      },
+      {
+        question: "How do I convert lbs to kg?",
+        answer:
+          "Multiply the pounds by 0.45359237. For example, 150 lbs × 0.45359237 = 68.039 kg.",
+      },
+      {
+        question: "How many pounds are in 1 kilogram?",
+        answer:
+          "One kilogram equals about 2.2046 pounds (2 lb 3.27 oz). The exact value is 1 ÷ 0.45359237 = 2.20462262 lb.",
+      },
+      {
+        question: "Is the pound defined exactly in kilograms?",
+        answer:
+          "Yes. Since the 1959 international yard and pound agreement, 1 avoirdupois pound is exactly 0.45359237 kg. This tool uses that exact constant.",
+      },
+      {
+        question: "How do I convert kg to pounds and ounces?",
+        answer:
+          "Convert kg to decimal pounds first, keep the whole number as pounds, then multiply the decimal remainder by 16 to get ounces. 70 kg is 154 lb 5.18 oz.",
+      },
+      {
+        question: "Is a quick mental conversion possible?",
+        answer:
+          "Double the kilograms and add 10 percent of that result. For 50 kg: 100 + 10 = 110 lbs, close to the exact 110.23 lbs.",
+      },
+      {
+        question: "How many kg is a stone?",
+        answer:
+          "One stone is 14 pounds, which is 6.35029318 kg. Enter pounds in the second converter to see the stone value.",
+      },
+      {
+        question: "Is this kg to lbs converter free and private?",
+        answer:
+          "Yes. It is free with no signup, and every calculation runs in your browser. Numbers you enter are never sent to or stored on a server.",
+      },
+    ],
+    relatedSlugs: ["cm-to-inches", "percentage-calculator", "gpa-calculator", "date-calculator", "margin-calculator"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {
