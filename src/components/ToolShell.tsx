@@ -11,6 +11,7 @@ import { GpaCalculatorWidget } from "@/components/GpaCalculatorWidget";
 import { DateCalculatorWidget } from "@/components/DateCalculatorWidget";
 import { CmToInchesWidget } from "@/components/CmToInchesWidget";
 import { KgToLbsWidget } from "@/components/KgToLbsWidget";
+import { KmToMilesWidget } from "@/components/KmToMilesWidget";
 
 type ToolShellProps = {
   tool: ToolDefinition;
@@ -53,6 +54,9 @@ export function ToolShell({ tool }: ToolShellProps) {
   }
   if (tool.slug === "kg-to-lbs") {
     return <KgToLbsWidget />;
+  }
+  if (tool.slug === "km-to-miles") {
+    return <KmToMilesWidget />;
   }
   if (tool.slug === "cm-to-inches") {
     return <CmToInchesWidget />;

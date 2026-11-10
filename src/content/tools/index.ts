@@ -606,6 +606,59 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["cm-to-inches", "percentage-calculator", "gpa-calculator", "date-calculator", "margin-calculator"],
   },
+  {
+    slug: "km-to-miles",
+    keyword: "km to miles",
+    title: "KM to Miles Converter",
+    description:
+      "Convert kilometers to miles and miles to kilometers instantly. Enter km to get exact miles (and feet), or turn miles into km and meters. Every result shows the formula used.",
+    metaTitle: "KM to Miles Converter — Free Kilometers to Miles Calculator",
+    metaDescription:
+      "Free km to miles converter. Convert kilometers to miles and miles to km using the exact 1.609344 factor. Includes a quick reference table. Runs in your browser.",
+    faq: [
+      {
+        question: "How do I convert km to miles?",
+        answer:
+          "Divide the distance in kilometers by 1.609344, or multiply by about 0.621371. For example, 10 km ÷ 1.609344 = 6.2137 miles.",
+      },
+      {
+        question: "How do I convert miles to km?",
+        answer:
+          "Multiply the miles by 1.609344. For example, 26.2 miles × 1.609344 = 42.164 km.",
+      },
+      {
+        question: "How many miles are in 1 kilometer?",
+        answer:
+          "One kilometer equals about 0.6214 miles. The exact value is 1 ÷ 1.609344 = 0.62137119 miles.",
+      },
+      {
+        question: "Is a mile defined exactly in kilometers?",
+        answer:
+          "Yes. Since the 1959 international yard and pound agreement, the international mile is exactly 1.609344 km (1,609.344 meters). This tool uses that exact constant.",
+      },
+      {
+        question: "How many miles is a 5K, 10K, or marathon?",
+        answer:
+          "A 5K is 3.107 miles, a 10K is 6.214 miles, a half marathon (21.0975 km) is 13.109 miles, and a marathon (42.195 km) is 26.219 miles.",
+      },
+      {
+        question: "Is there a quick mental conversion from km to miles?",
+        answer:
+          "Multiply the kilometers by 0.6, or halve them and add a tenth of the original. For 100 km: 60 miles, close to the exact 62.14 miles.",
+      },
+      {
+        question: "How many feet are in a kilometer?",
+        answer:
+          "One kilometer is about 3,280.84 feet. The converter shows the feet equivalent under the miles result.",
+      },
+      {
+        question: "Is this km to miles converter free and private?",
+        answer:
+          "Yes. It is free with no signup, and every calculation runs in your browser. Numbers you enter are never sent to or stored on a server.",
+      },
+    ],
+    relatedSlugs: ["kg-to-lbs", "cm-to-inches", "percentage-calculator", "date-calculator", "margin-calculator"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {
