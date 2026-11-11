@@ -659,6 +659,59 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["kg-to-lbs", "cm-to-inches", "percentage-calculator", "date-calculator", "margin-calculator"],
   },
+  {
+    slug: "celsius-to-fahrenheit",
+    keyword: "celsius to fahrenheit",
+    title: "Celsius to Fahrenheit Converter",
+    description:
+      "Convert Celsius to Fahrenheit and Fahrenheit to Celsius instantly. Enter a temperature to get exact °F, °C and Kelvin values, with the formula shown for every result.",
+    metaTitle: "Celsius to Fahrenheit Converter — Free °C to °F Calculator",
+    metaDescription:
+      "Free Celsius to Fahrenheit converter. Convert °C to °F and °F to °C with the exact formula, plus a quick reference table. Runs in your browser.",
+    faq: [
+      {
+        question: "How do I convert Celsius to Fahrenheit?",
+        answer:
+          "Multiply the Celsius temperature by 9/5 (1.8) and add 32. For example, 25 \u00b0C \u00d7 1.8 + 32 = 77 \u00b0F.",
+      },
+      {
+        question: "How do I convert Fahrenheit to Celsius?",
+        answer:
+          "Subtract 32 from the Fahrenheit temperature, then multiply by 5/9. For example, (77 \u2212 32) \u00d7 5/9 = 25 \u00b0C.",
+      },
+      {
+        question: "What is 0 \u00b0C in Fahrenheit?",
+        answer:
+          "0 \u00b0C is 32 \u00b0F, the freezing point of water at standard atmospheric pressure.",
+      },
+      {
+        question: "What is 100 \u00b0C in Fahrenheit?",
+        answer:
+          "100 \u00b0C is 212 \u00b0F, the boiling point of water at sea level.",
+      },
+      {
+        question: "What is normal body temperature in Celsius and Fahrenheit?",
+        answer:
+          "Average body temperature is about 37 \u00b0C, which equals 98.6 \u00b0F.",
+      },
+      {
+        question: "At what temperature are Celsius and Fahrenheit equal?",
+        answer:
+          "They are equal at \u221240 degrees: \u221240 \u00b0C = \u221240 \u00b0F.",
+      },
+      {
+        question: "Is there a quick mental trick for Celsius to Fahrenheit?",
+        answer:
+          "Double the Celsius value and add 30. For 20 \u00b0C that gives 70 \u00b0F, close to the exact 68 \u00b0F. It works best for everyday temperatures.",
+      },
+      {
+        question: "Is this Celsius to Fahrenheit converter free and private?",
+        answer:
+          "Yes. It is free with no signup, and every calculation runs in your browser. Numbers you enter are never sent to or stored on a server.",
+      },
+    ],
+    relatedSlugs: ["km-to-miles", "kg-to-lbs", "cm-to-inches", "percentage-calculator", "date-calculator"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {
