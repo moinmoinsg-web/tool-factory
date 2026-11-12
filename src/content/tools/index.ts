@@ -712,6 +712,54 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["km-to-miles", "kg-to-lbs", "cm-to-inches", "percentage-calculator", "date-calculator"],
   },
+  {
+    slug: "fahrenheit-to-celsius",
+    keyword: "fahrenheit to celsius",
+    title: "Fahrenheit to Celsius Converter",
+    description:
+      "Convert Fahrenheit to Celsius instantly. Enter a temperature in \u00b0F to get exact \u00b0C and Kelvin values, with the formula shown and a quick reference table for common temperatures.",
+    metaTitle: "Fahrenheit to Celsius Converter \u2014 Free \u00b0F to \u00b0C Calculator",
+    metaDescription:
+      "Free Fahrenheit to Celsius converter. Convert \u00b0F to \u00b0C with the exact formula, plus a reference table for oven, weather and body temperatures. Runs in your browser.",
+    faq: [
+      {
+        question: "How do I convert Fahrenheit to Celsius?",
+        answer:
+          "Subtract 32 from the Fahrenheit temperature, then multiply by 5/9. For example, (77 \u2212 32) \u00d7 5/9 = 25 \u00b0C.",
+      },
+      {
+        question: "What is the formula for Fahrenheit to Celsius?",
+        answer: "\u00b0C = (\u00b0F \u2212 32) \u00d7 5/9. Equivalently, \u00b0C = (\u00b0F \u2212 32) \u00f7 1.8.",
+      },
+      {
+        question: "What is 32 \u00b0F in Celsius?",
+        answer: "32 \u00b0F is 0 \u00b0C, the freezing point of water at standard atmospheric pressure.",
+      },
+      {
+        question: "What is 212 \u00b0F in Celsius?",
+        answer: "212 \u00b0F is 100 \u00b0C, the boiling point of water at sea level.",
+      },
+      {
+        question: "What is 98.6 \u00b0F in Celsius?",
+        answer: "98.6 \u00b0F is 37 \u00b0C, the commonly cited average human body temperature.",
+      },
+      {
+        question: "What is 350 \u00b0F in Celsius for baking?",
+        answer: "350 \u00b0F is about 177 \u00b0C. Many recipes round this to 175 \u00b0C or 180 \u00b0C.",
+      },
+      {
+        question: "Is there a quick mental trick for Fahrenheit to Celsius?",
+        answer:
+          "Subtract 30 and halve the result. For 70 \u00b0F that gives 20 \u00b0C, close to the exact 21.1 \u00b0C. It works best for everyday temperatures.",
+      },
+      {
+        question: "Is this Fahrenheit to Celsius converter free and private?",
+        answer:
+          "Yes. It is free with no signup, and every calculation runs in your browser. Numbers you enter are never sent to or stored on a server.",
+      },
+    ],
+    relatedSlugs: ["celsius-to-fahrenheit", "km-to-miles", "kg-to-lbs", "cm-to-inches", "percentage-calculator"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {

@@ -9,6 +9,7 @@ import { PercentageCalculatorWidget } from "@/components/PercentageCalculatorWid
 import { MarginCalculatorWidget } from "@/components/MarginCalculatorWidget";
 import { GpaCalculatorWidget } from "@/components/GpaCalculatorWidget";
 import { DateCalculatorWidget } from "@/components/DateCalculatorWidget";
+import { FahrenheitToCelsiusWidget } from "@/components/FahrenheitToCelsiusWidget";
 import { CelsiusToFahrenheitWidget } from "@/components/CelsiusToFahrenheitWidget";
 import { CmToInchesWidget } from "@/components/CmToInchesWidget";
 import { KgToLbsWidget } from "@/components/KgToLbsWidget";
@@ -58,6 +59,9 @@ export function ToolShell({ tool }: ToolShellProps) {
   }
   if (tool.slug === "km-to-miles") {
     return <KmToMilesWidget />;
+  }
+  if (tool.slug === "fahrenheit-to-celsius") {
+    return <FahrenheitToCelsiusWidget />;
   }
   if (tool.slug === "celsius-to-fahrenheit") {
     return <CelsiusToFahrenheitWidget />;
