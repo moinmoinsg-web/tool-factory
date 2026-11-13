@@ -760,6 +760,56 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["celsius-to-fahrenheit", "km-to-miles", "kg-to-lbs", "cm-to-inches", "percentage-calculator"],
   },
+  {
+    slug: "acres-to-square-feet",
+    keyword: "acres to square feet",
+    title: "Acres to Square Feet Converter",
+    description:
+      "Convert acres to square feet instantly, and square feet back to acres. Also see square meters, hectares and square yards, with the formula shown and a quick reference table for common lot sizes.",
+    metaTitle: "Acres to Square Feet Converter \u2014 Free Acre to sq ft Calculator",
+    metaDescription:
+      "Free acres to square feet converter. Convert acres to sq ft, sq ft to acres, hectares and square meters with the exact 43,560 factor. Runs in your browser.",
+    faq: [
+      {
+        question: "How many square feet are in an acre?",
+        answer: "There are exactly 43,560 square feet in one international acre.",
+      },
+      {
+        question: "How do I convert acres to square feet?",
+        answer:
+          "Multiply the number of acres by 43,560. For example, 2.5 acres \u00d7 43,560 = 108,900 square feet.",
+      },
+      {
+        question: "How do I convert square feet to acres?",
+        answer:
+          "Divide the square footage by 43,560. For example, 10,000 sq ft \u00f7 43,560 = 0.2296 acres.",
+      },
+      {
+        question: "How many square feet are in half an acre?",
+        answer: "Half an acre is 21,780 square feet.",
+      },
+      {
+        question: "How many acres is a football field?",
+        answer:
+          "An American football field including end zones (360 \u00d7 160 ft = 57,600 sq ft) is about 1.32 acres.",
+      },
+      {
+        question: "How many square meters are in an acre?",
+        answer: "One acre is about 4,046.86 square meters, or roughly 0.4047 hectares.",
+      },
+      {
+        question: "Is a US survey acre different from an international acre?",
+        answer:
+          "The two differ by only about two parts per million. For everyday land measurement, 43,560 sq ft per acre is the standard figure used here.",
+      },
+      {
+        question: "Is this acres to square feet converter free and private?",
+        answer:
+          "Yes. It is free with no signup, and every calculation runs in your browser. Numbers you enter are never sent to or stored on a server.",
+      },
+    ],
+    relatedSlugs: ["km-to-miles", "cm-to-inches", "kg-to-lbs", "percentage-calculator", "date-calculator"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {

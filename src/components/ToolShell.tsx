@@ -9,6 +9,7 @@ import { PercentageCalculatorWidget } from "@/components/PercentageCalculatorWid
 import { MarginCalculatorWidget } from "@/components/MarginCalculatorWidget";
 import { GpaCalculatorWidget } from "@/components/GpaCalculatorWidget";
 import { DateCalculatorWidget } from "@/components/DateCalculatorWidget";
+import { AcresToSquareFeetWidget } from "@/components/AcresToSquareFeetWidget";
 import { FahrenheitToCelsiusWidget } from "@/components/FahrenheitToCelsiusWidget";
 import { CelsiusToFahrenheitWidget } from "@/components/CelsiusToFahrenheitWidget";
 import { CmToInchesWidget } from "@/components/CmToInchesWidget";
@@ -65,6 +66,9 @@ export function ToolShell({ tool }: ToolShellProps) {
   }
   if (tool.slug === "celsius-to-fahrenheit") {
     return <CelsiusToFahrenheitWidget />;
+  }
+  if (tool.slug === "acres-to-square-feet") {
+    return <AcresToSquareFeetWidget />;
   }
   if (tool.slug === "cm-to-inches") {
     return <CmToInchesWidget />;
