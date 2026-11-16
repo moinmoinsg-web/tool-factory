@@ -810,6 +810,27 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["km-to-miles", "cm-to-inches", "kg-to-lbs", "percentage-calculator", "date-calculator"],
   },
+  {
+    slug: "pounds-to-ounces",
+    keyword: "pounds to ounces",
+    title: "Pounds to Ounces Converter",
+    description:
+      "Convert pounds to ounces instantly, and ounces back to pounds. See the result in grams and as pounds plus ounces, with the formula shown and a quick reference table for common weights.",
+    metaTitle: "Pounds to Ounces Converter \u2014 Free lb to oz Calculator",
+    metaDescription:
+      "Free pounds to ounces converter. Convert lb to oz and oz to lb using the exact 16 ounces per pound factor, with grams and a quick table. Runs in your browser.",
+    faq: [
+      { question: "How many ounces are in a pound?", answer: "There are exactly 16 ounces in one pound (avoirdupois)." },
+      { question: "How do I convert pounds to ounces?", answer: "Multiply the number of pounds by 16. For example, 2.5 lb \u00d7 16 = 40 oz." },
+      { question: "How do I convert ounces to pounds?", answer: "Divide the ounces by 16. For example, 40 oz \u00f7 16 = 2.5 lb, or 2 lb 8 oz." },
+      { question: "How many ounces are in half a pound?", answer: "Half a pound is 8 ounces." },
+      { question: "How many ounces are in 5 pounds?", answer: "5 pounds is 80 ounces (5 \u00d7 16)." },
+      { question: "How many grams is one ounce?", answer: "One ounce is exactly 28.349523125 grams, so one pound is about 453.59 grams." },
+      { question: "Are fluid ounces the same as ounces of weight?", answer: "No. This converter uses ounces of weight (mass). Fluid ounces measure volume, and the weight of a fluid ounce depends on the liquid." },
+      { question: "Is this pounds to ounces converter free and private?", answer: "Yes. It is free with no signup, and every calculation runs in your browser. Numbers you enter are never sent to or stored on a server." },
+    ],
+    relatedSlugs: ["kg-to-lbs", "acres-to-square-feet", "km-to-miles", "cm-to-inches", "percentage-calculator"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {
