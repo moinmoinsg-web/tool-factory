@@ -831,6 +831,27 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["kg-to-lbs", "acres-to-square-feet", "km-to-miles", "cm-to-inches", "percentage-calculator"],
   },
+  {
+    slug: "1rm-calculator",
+    keyword: "1rm calculator",
+    title: "1RM Calculator",
+    description:
+      "Estimate your one-rep max (1RM) from any set of 1 to 30 reps. Compare the Epley, Brzycki, Lombardi, O'Conner, Mayhew and Wathan formulas, see the average, and get a training percentage chart in lb or kg.",
+    metaTitle: "1RM Calculator \u2014 Free One Rep Max Calculator (lb & kg)",
+    metaDescription:
+      "Free 1RM calculator. Estimate your one-rep max for squat, bench or deadlift with six formulas (Epley, Brzycki and more) plus a percentage chart. Runs in your browser.",
+    faq: [
+      { question: "What is a 1RM?", answer: "Your one-rep max (1RM) is the heaviest weight you can lift for a single repetition with proper form on a given exercise." },
+      { question: "How do you calculate 1RM?", answer: "Use a formula that estimates 1RM from a lighter set. The Epley formula is 1RM = weight \u00d7 (1 + reps \u00f7 30). For example, 200 lb for 5 reps gives 200 \u00d7 (1 + 5/30) \u2248 233 lb." },
+      { question: "What is the Brzycki formula?", answer: "Brzycki estimates 1RM as weight \u00d7 36 \u00f7 (37 \u2212 reps). It is popular for sets of about 10 reps or fewer." },
+      { question: "Which 1RM formula is most accurate?", answer: "No single formula is best for everyone. They agree closely at low reps (2 to 6) and drift apart at higher reps, which is why this calculator shows several and their average." },
+      { question: "How many reps should I use to estimate my 1RM?", answer: "Sets of 2 to 6 reps give the most reliable estimates. Accuracy falls off above about 10 reps, and this calculator accepts up to 30." },
+      { question: "Is it safe to test a true 1RM?", answer: "Maximal lifts carry more injury risk, especially without a spotter. Estimating 1RM from a submaximal set is a safer way to set training loads." },
+      { question: "What percentage of 1RM should I train at?", answer: "Strength work is commonly done at 80 to 95 percent of 1RM for low reps, while hypertrophy work is often around 65 to 80 percent. The chart on this page shows each percentage in your weight unit." },
+      { question: "Is this 1RM calculator free and private?", answer: "Yes. It is free with no signup, and every calculation runs in your browser. Numbers you enter are never sent to or stored on a server." },
+    ],
+    relatedSlugs: ["percentage-calculator", "kg-to-lbs", "pounds-to-ounces", "gpa-calculator", "date-calculator"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {

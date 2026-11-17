@@ -10,6 +10,7 @@ import { MarginCalculatorWidget } from "@/components/MarginCalculatorWidget";
 import { GpaCalculatorWidget } from "@/components/GpaCalculatorWidget";
 import { DateCalculatorWidget } from "@/components/DateCalculatorWidget";
 import { AcresToSquareFeetWidget } from "@/components/AcresToSquareFeetWidget";
+import { OneRepMaxWidget } from "@/components/OneRepMaxWidget";
 import { PoundsToOuncesWidget } from "@/components/PoundsToOuncesWidget";
 import { FahrenheitToCelsiusWidget } from "@/components/FahrenheitToCelsiusWidget";
 import { CelsiusToFahrenheitWidget } from "@/components/CelsiusToFahrenheitWidget";
@@ -67,6 +68,9 @@ export function ToolShell({ tool }: ToolShellProps) {
   }
   if (tool.slug === "celsius-to-fahrenheit") {
     return <CelsiusToFahrenheitWidget />;
+  }
+  if (tool.slug === "1rm-calculator") {
+    return <OneRepMaxWidget />;
   }
   if (tool.slug === "pounds-to-ounces") {
     return <PoundsToOuncesWidget />;
