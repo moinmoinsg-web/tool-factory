@@ -852,6 +852,27 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["percentage-calculator", "kg-to-lbs", "pounds-to-ounces", "gpa-calculator", "date-calculator"],
   },
+  {
+    slug: "sql-formatter",
+    keyword: "sql formatter",
+    title: "SQL Formatter",
+    description:
+      "Format, beautify and minify SQL queries online. Paste messy SQL to get clean, indented code with uppercase keywords, readable JOINs and one clause per line, right in your browser.",
+    metaTitle: "SQL Formatter \u2014 Free Online SQL Beautifier & Minifier",
+    metaDescription:
+      "Free SQL formatter. Beautify or minify SQL queries with custom indentation and keyword case. Works with SELECT, JOIN, subqueries and more. Runs in your browser.",
+    faq: [
+      { question: "What does a SQL formatter do?", answer: "A SQL formatter rewrites a query with consistent line breaks, indentation and keyword casing so it is easier to read, review and debug. It does not change what the query does." },
+      { question: "How do I format SQL online with this tool?", answer: "Paste your query into the input box. The formatted result appears instantly on the right. Pick an indent size and keyword case, then click Copy." },
+      { question: "Can it minify SQL too?", answer: "Yes. Switch the mode to Minify to strip comments and extra whitespace and collapse the query onto a single line." },
+      { question: "Does formatting change my query results?", answer: "No. Only whitespace and the case of SQL keywords change. Table names, column names and string literals are left exactly as you typed them." },
+      { question: "Which SQL dialects are supported?", answer: "The formatter works on common ANSI SQL used by MySQL, PostgreSQL, SQL Server, SQLite and Oracle, including SELECT, JOIN, GROUP BY, subqueries, INSERT, UPDATE and DELETE statements." },
+      { question: "Should SQL keywords be uppercase?", answer: "Uppercase keywords are a widespread convention because they stand out from table and column names, but it is a style choice. You can choose uppercase, lowercase or keep your original case." },
+      { question: "Does it handle multiple statements and comments?", answer: "Yes. Statements separated by semicolons are formatted one after another, and -- line comments and /* block */ comments are preserved in Beautify mode." },
+      { question: "Is my SQL sent to a server?", answer: "No. Formatting runs entirely in your browser, so your queries and data never leave your device." },
+    ],
+    relatedSlugs: ["json-formatter", "xml-formatter", "json-to-csv-converter", "xml-to-json-converter", "word-counter"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {
