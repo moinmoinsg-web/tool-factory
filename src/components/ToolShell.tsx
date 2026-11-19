@@ -17,6 +17,7 @@ import { CelsiusToFahrenheitWidget } from "@/components/CelsiusToFahrenheitWidge
 import { CmToInchesWidget } from "@/components/CmToInchesWidget";
 import { KgToLbsWidget } from "@/components/KgToLbsWidget";
 import { SqlFormatterWidget } from "@/components/SqlFormatterWidget";
+import { MarkupCalculatorWidget } from "@/components/MarkupCalculatorWidget";
 import { KmToMilesWidget } from "@/components/KmToMilesWidget";
 
 type ToolShellProps = {
@@ -78,6 +79,9 @@ export function ToolShell({ tool }: ToolShellProps) {
   }
   if (tool.slug === "acres-to-square-feet") {
     return <AcresToSquareFeetWidget />;
+  }
+  if (tool.slug === "markup-calculator") {
+    return <MarkupCalculatorWidget />;
   }
   if (tool.slug === "sql-formatter") {
     return <SqlFormatterWidget />;

@@ -873,6 +873,27 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["json-formatter", "xml-formatter", "json-to-csv-converter", "xml-to-json-converter", "word-counter"],
   },
+  {
+    slug: "markup-calculator",
+    keyword: "markup calculator",
+    title: "Markup Calculator",
+    description:
+      "Calculate markup percentage from cost and selling price, find the selling price for a target markup, or work backwards to cost. See profit and gross margin alongside every result, with the formula shown.",
+    metaTitle: "Markup Calculator \u2014 Free Markup, Price & Profit Calculator",
+    metaDescription:
+      "Free markup calculator. Find markup % from cost and price, the selling price for a target markup, or the cost behind a price. Shows profit and margin. Runs in your browser.",
+    faq: [
+      { question: "What is markup?", answer: "Markup is the percentage you add on top of an item's cost to get its selling price. A $60 item sold for $90 has a $30 profit, which is a 50% markup on cost." },
+      { question: "How do I calculate markup percentage?", answer: "Subtract cost from the selling price, divide by cost, then multiply by 100. Markup % = (Price - Cost) / Cost x 100." },
+      { question: "How do I find the selling price from a markup?", answer: "Multiply cost by one plus the markup as a decimal. For a 40% markup on $50 cost, the price is 50 x 1.40 = $70." },
+      { question: "What is the difference between markup and margin?", answer: "Markup is profit divided by cost; margin is profit divided by selling price. The same sale always has a lower margin than markup, for example a 50% markup equals a 33.33% margin." },
+      { question: "Can markup be over 100%?", answer: "Yes. If you sell something for more than double its cost, the markup is above 100%. Margin, by contrast, can never reach 100%." },
+      { question: "How do I work out cost from price and markup?", answer: "Divide the selling price by one plus the markup as a decimal. A $150 price with a 50% markup means a cost of 150 / 1.5 = $100." },
+      { question: "What markup should I use for my business?", answer: "It depends on your industry, overheads and competition. Retail often uses 50% or more, while high-volume sellers accept lower markups. Check that your margin covers expenses." },
+      { question: "Is my data stored anywhere?", answer: "No. All calculations run in your browser and nothing you enter is sent to a server." },
+    ],
+    relatedSlugs: ["margin-calculator", "percentage-calculator", "gpa-calculator", "date-calculator", "word-counter"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {
