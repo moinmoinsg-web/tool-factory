@@ -894,6 +894,27 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["margin-calculator", "percentage-calculator", "gpa-calculator", "date-calculator", "word-counter"],
   },
+  {
+    slug: "diff-checker",
+    keyword: "diff checker",
+    title: "Diff Checker",
+    description:
+      "Compare two blocks of text or code side by side and see exactly which lines were added or removed. Free online diff checker with ignore-case and ignore-whitespace options, running in your browser.",
+    metaTitle: "Diff Checker \u2014 Free Online Text & Code Compare Tool",
+    metaDescription:
+      "Free diff checker. Paste two texts or code snippets to instantly highlight added and removed lines. Ignore case or whitespace. Runs in your browser, nothing is uploaded.",
+    faq: [
+      { question: "What is a diff checker?", answer: "A diff checker compares two pieces of text and highlights the differences between them, showing which lines were added, removed or left unchanged." },
+      { question: "How do I compare two texts online?", answer: "Paste the original text in the left box and the changed text in the right box. The differences appear instantly below, with added lines in green and removed lines in red." },
+      { question: "Can I compare code with this tool?", answer: "Yes. It works on any plain text including source code, JSON, YAML, config files, SQL and documents. Lines are compared exactly as written unless you enable an ignore option." },
+      { question: "What does ignore whitespace do?", answer: "It treats runs of spaces and tabs as a single space and trims line ends, so lines that only differ in indentation or spacing are counted as unchanged." },
+      { question: "What does ignore case do?", answer: "It compares lines without regard to uppercase or lowercase letters, so Hello and hello are treated as the same line." },
+      { question: "How does the comparison work?", answer: "The tool finds the longest common sequence of lines between the two texts, then marks everything outside that sequence as added or removed. This is the same idea used by tools like git diff." },
+      { question: "Is there a size limit?", answer: "Because the comparison runs in your browser, very large inputs can be slow. Texts of up to about 3,000 lines per side compare comfortably." },
+      { question: "Is my text uploaded or stored?", answer: "No. The comparison runs entirely in your browser, so your text never leaves your device." },
+    ],
+    relatedSlugs: ["json-formatter", "xml-formatter", "sql-formatter", "word-counter", "json-to-csv-converter"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {
