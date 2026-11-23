@@ -915,6 +915,26 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["json-formatter", "xml-formatter", "sql-formatter", "word-counter", "json-to-csv-converter"],
   },
+  {
+    slug: "html-viewer",
+    keyword: "html viewer",
+    title: "HTML Viewer",
+    description:
+      "View HTML online: paste your HTML, CSS and markup and see a live rendered preview side by side. Free HTML viewer that runs in your browser in a sandboxed frame.",
+    metaTitle: "HTML Viewer \u2014 Free Online HTML Preview & Renderer",
+    metaDescription:
+      "Free online HTML viewer. Paste HTML and CSS and see a live rendered preview instantly. Sandboxed, private, no signup. Runs in your browser.",
+    faq: [
+      { question: "What is an HTML viewer?", answer: "An HTML viewer renders HTML code as a web page so you can see how it looks without saving a file or opening a browser dev tool. Paste your markup and the preview appears next to it." },
+      { question: "How do I view an HTML file online?", answer: "Open the file in a text editor, copy its contents, and paste them into the HTML code box. The rendered page shows in the preview panel straight away." },
+      { question: "Does it support CSS?", answer: "Yes. Inline styles and style tags in your HTML are applied in the preview, so you can test layouts, colours and fonts." },
+      { question: "Does JavaScript run in the preview?", answer: "No. The preview is sandboxed and scripts are disabled for your safety, so only HTML and CSS are rendered." },
+      { question: "Can I load external images and stylesheets?", answer: "Images and stylesheets referenced by full https URLs generally load. Relative paths to files on your computer will not, because the viewer has no access to your file system." },
+      { question: "Is my HTML uploaded or stored?", answer: "No. Rendering happens entirely in your browser, so your code never leaves your device." },
+      { question: "Why does my page look different in another browser?", answer: "Browsers can differ slightly in default styles and newer CSS features. This viewer uses your own browser's rendering engine, so it matches what you would see opening the page there." },
+    ],
+    relatedSlugs: ["diff-checker", "xml-formatter", "json-formatter", "sql-formatter", "word-counter"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {
