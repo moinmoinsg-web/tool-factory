@@ -17,6 +17,7 @@ import { CelsiusToFahrenheitWidget } from "@/components/CelsiusToFahrenheitWidge
 import { CmToInchesWidget } from "@/components/CmToInchesWidget";
 import { KgToLbsWidget } from "@/components/KgToLbsWidget";
 import { SqlFormatterWidget } from "@/components/SqlFormatterWidget";
+import { IpSubnetCalculatorWidget } from "@/components/IpSubnetCalculatorWidget";
 import { HtmlViewerWidget } from "@/components/HtmlViewerWidget";
 import { DiffCheckerWidget } from "@/components/DiffCheckerWidget";
 import { MarkupCalculatorWidget } from "@/components/MarkupCalculatorWidget";
@@ -81,6 +82,9 @@ export function ToolShell({ tool }: ToolShellProps) {
   }
   if (tool.slug === "acres-to-square-feet") {
     return <AcresToSquareFeetWidget />;
+  }
+  if (tool.slug === "ip-subnet-calculator") {
+    return <IpSubnetCalculatorWidget />;
   }
   if (tool.slug === "html-viewer") {
     return <HtmlViewerWidget />;

@@ -935,6 +935,27 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["diff-checker", "xml-formatter", "json-formatter", "sql-formatter", "word-counter"],
   },
+  {
+    slug: "ip-subnet-calculator",
+    keyword: "ip subnet calculator",
+    title: "IP Subnet Calculator",
+    description:
+      "Calculate IPv4 subnets online: enter an IP address and CIDR prefix or subnet mask to get the network address, broadcast address, usable host range, wildcard mask and host count.",
+    metaTitle: "IP Subnet Calculator \u2014 Free IPv4 CIDR & Subnet Mask Tool",
+    metaDescription:
+      "Free IP subnet calculator. Enter an IPv4 address and CIDR or mask to get network, broadcast, usable host range, wildcard mask and host count instantly.",
+    faq: [
+      { question: "What is an IP subnet calculator?", answer: "An IP subnet calculator takes an IPv4 address and a prefix length or subnet mask and works out the network address, broadcast address, usable host range and number of hosts for that subnet." },
+      { question: "How do I calculate a subnet?", answer: "Enter the IP address, then a CIDR prefix such as /24 or a subnet mask such as 255.255.255.0. The calculator applies the mask to the address with a bitwise AND to find the network address and fills in the rest." },
+      { question: "What does /24 mean?", answer: "/24 is CIDR notation for a subnet mask with 24 leading one-bits, which is 255.255.255.0. It leaves 8 host bits, giving 256 addresses and 254 usable hosts." },
+      { question: "How many usable hosts are in a subnet?", answer: "Usable hosts equal 2 to the power of the host bits, minus 2 for the network and broadcast addresses. A /30 has 2 usable hosts, a /24 has 254 and a /16 has 65,534. /31 point-to-point links use both addresses and /32 is a single host." },
+      { question: "What is a wildcard mask?", answer: "A wildcard mask is the inverse of the subnet mask. For 255.255.255.0 the wildcard mask is 0.0.0.255. It is commonly used in router access lists and OSPF network statements." },
+      { question: "What is the difference between the network and broadcast address?", answer: "The network address is the first address in a subnet and identifies the subnet itself. The broadcast address is the last address and is used to reach every host in the subnet. Neither is assigned to a normal host." },
+      { question: "Does this support IPv6?", answer: "No. This calculator handles IPv4 only. IPv6 subnetting uses 128-bit addresses and prefix lengths and works differently." },
+      { question: "Is my data sent to a server?", answer: "No. All calculations run in your browser, so the addresses you enter never leave your device." },
+    ],
+    relatedSlugs: ["diff-checker", "html-viewer", "percentage-calculator", "json-formatter", "word-counter"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {
