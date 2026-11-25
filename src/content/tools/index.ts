@@ -956,6 +956,27 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["diff-checker", "html-viewer", "percentage-calculator", "json-formatter", "word-counter"],
   },
+  {
+    slug: "standard-deviation-calculator",
+    keyword: "standard deviation calculator",
+    title: "Standard Deviation Calculator",
+    description:
+      "Paste a list of numbers to calculate standard deviation (population or sample), variance, mean, count, sum, min, max and range, with step-by-step working.",
+    metaTitle: "Standard Deviation Calculator \u2014 Sample & Population, with Steps",
+    metaDescription:
+      "Free standard deviation calculator. Paste your numbers to get sample or population SD, variance, mean, count, sum, min/max and step-by-step working.",
+    faq: [
+      { question: "What is standard deviation?", answer: "Standard deviation measures how spread out numbers are around their mean. A low value means the data points sit close to the mean; a high value means they are more spread out." },
+      { question: "What is the difference between population and sample standard deviation?", answer: "Population standard deviation divides the sum of squared differences by N and is used when your data is the entire group. Sample standard deviation divides by n - 1 (Bessel's correction) and is used when your data is a sample drawn from a larger group." },
+      { question: "How do you calculate standard deviation?", answer: "Find the mean, subtract it from each value and square the result, add up the squares, divide by N (population) or n - 1 (sample) to get the variance, then take the square root." },
+      { question: "What is variance?", answer: "Variance is the average of the squared differences from the mean. Standard deviation is the square root of variance, which puts the spread back into the same units as your data." },
+      { question: "Which one should I use, sample or population?", answer: "Use sample if your numbers are only part of a bigger group, which is the usual case in surveys and experiments. Use population only when you have every value in the group." },
+      { question: "How do I enter my numbers?", answer: "Paste or type numbers separated by commas, spaces, semicolons or new lines. The results update as you type." },
+      { question: "Can standard deviation be negative?", answer: "No. It is a square root of a sum of squares, so it is always zero or positive. It is zero only when every value is identical." },
+      { question: "Is my data sent to a server?", answer: "No. All calculations run in your browser, so your numbers never leave your device." },
+    ],
+    relatedSlugs: ["percentage-calculator", "margin-calculator", "gpa-calculator", "word-counter", "markup-calculator"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {
