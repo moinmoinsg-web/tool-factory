@@ -977,6 +977,26 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["percentage-calculator", "margin-calculator", "gpa-calculator", "word-counter", "markup-calculator"],
   },
+  {
+    slug: "tip-calculator",
+    keyword: "tip calculator",
+    title: "Tip Calculator",
+    description:
+      "Calculate the tip and total for any bill, pick a tip percentage, and split it between any number of people. Optional round-up to the next dollar.",
+    metaTitle: "Tip Calculator \u2014 Tip, Total & Split the Bill",
+    metaDescription:
+      "Free tip calculator. Enter the bill, choose 10%, 15%, 18%, 20% or a custom tip, and split the total between friends. Instant, private, no sign-up.",
+    faq: [
+      { question: "How do I calculate a tip?", answer: "Multiply the bill by the tip percentage as a decimal. For an 18% tip on $85, 85 x 0.18 = $15.30, so the total is $100.30." },
+      { question: "How much should I tip at a restaurant?", answer: "In the US, 15% to 20% of the pre-tax bill is typical for table service, with 18% to 20% common for good service. Check local customs elsewhere." },
+      { question: "How do I split a bill with a tip?", answer: "Enter the number of people. The calculator adds the tip to the bill and divides the total evenly, showing the total and the tip per person." },
+      { question: "Should I tip on the pre-tax or post-tax amount?", answer: "Many people tip on the pre-tax subtotal. Tipping on the post-tax total is also acceptable and slightly more generous." },
+      { question: "What is a quick way to work out 15% or 20%?", answer: "Move the decimal one place left to get 10%. Add half of that for 15%, or double it for 20%." },
+      { question: "What does rounding up do?", answer: "It rounds the total up to the next whole dollar and adjusts the tip to match, which makes paying in cash easier." },
+      { question: "Is my data sent to a server?", answer: "No. Everything is calculated in your browser, so the amounts you enter never leave your device." },
+    ],
+    relatedSlugs: ["percentage-calculator", "margin-calculator", "markup-calculator", "standard-deviation-calculator", "gpa-calculator"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {

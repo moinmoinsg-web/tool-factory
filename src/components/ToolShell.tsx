@@ -19,6 +19,7 @@ import { KgToLbsWidget } from "@/components/KgToLbsWidget";
 import { SqlFormatterWidget } from "@/components/SqlFormatterWidget";
 import { IpSubnetCalculatorWidget } from "@/components/IpSubnetCalculatorWidget";
 import { StandardDeviationCalculatorWidget } from "@/components/StandardDeviationCalculatorWidget";
+import { TipCalculatorWidget } from "@/components/TipCalculatorWidget";
 import { HtmlViewerWidget } from "@/components/HtmlViewerWidget";
 import { DiffCheckerWidget } from "@/components/DiffCheckerWidget";
 import { MarkupCalculatorWidget } from "@/components/MarkupCalculatorWidget";
@@ -89,6 +90,9 @@ export function ToolShell({ tool }: ToolShellProps) {
   }
   if (tool.slug === "standard-deviation-calculator") {
     return <StandardDeviationCalculatorWidget />;
+  }
+  if (tool.slug === "tip-calculator") {
+    return <TipCalculatorWidget />;
   }
   if (tool.slug === "html-viewer") {
     return <HtmlViewerWidget />;
