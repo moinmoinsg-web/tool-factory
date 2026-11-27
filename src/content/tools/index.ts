@@ -997,6 +997,26 @@ export const tools: ToolDefinition[] = [
     ],
     relatedSlugs: ["percentage-calculator", "margin-calculator", "markup-calculator", "standard-deviation-calculator", "gpa-calculator"],
   },
+  {
+    slug: "binary-translator",
+    keyword: "binary translator",
+    title: "Binary Translator",
+    description:
+      "Translate text to binary and binary back to text instantly. Supports full UTF-8, spaces between bytes, and one-click copy.",
+    metaTitle: "Binary Translator \u2014 Text to Binary & Binary to Text",
+    metaDescription:
+      "Free binary translator. Convert text to binary code or decode binary to readable text in your browser. UTF-8 support, instant and private.",
+    faq: [
+      { question: "How do I translate text to binary?", answer: "Type your text in Text to binary mode. Each character is converted to its UTF-8 byte value and shown as 8 binary digits. For example, 'A' is 65, which is 01000001." },
+      { question: "How do I translate binary to text?", answer: "Switch to Binary to text mode and paste groups of 8 bits, with or without spaces. The tool converts each byte back to a character." },
+      { question: "Why does binary use 8 bits per character?", answer: "A byte is 8 bits and can store 256 values. Standard ASCII characters fit in one byte, while other UTF-8 characters use two to four bytes." },
+      { question: "What does 01001000 01100101 01101100 01101100 01101111 say?", answer: "It spells 'Hello': 01001000 is H, 01100101 is e, 01101100 is l (twice) and 01101111 is o." },
+      { question: "Does it support emoji and non-English letters?", answer: "Yes. The translator uses UTF-8, so accented letters, other scripts and emoji are encoded as multiple bytes and decoded back correctly." },
+      { question: "Why do I get an error when decoding binary?", answer: "The binary must contain only 0 and 1, its length must be a multiple of 8, and the bytes must form valid UTF-8 text." },
+      { question: "Is my data sent to a server?", answer: "No. Everything runs in your browser, so your text never leaves your device." },
+    ],
+    relatedSlugs: ["diff-checker", "html-viewer", "sql-formatter", "word-counter", "json-formatter"],
+  },
 ];
 
 export function getAllTools(): ToolDefinition[] {
